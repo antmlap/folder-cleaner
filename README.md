@@ -1,12 +1,29 @@
-# 🧹 Folder Cleaner Script
+# 📝 Word Stats Analyzer
 
-A simple Python CLI tool that automatically organizes files in a folder by file type. Useful for cleaning up your Downloads directory or any messy workspace.
+A Python script that reads a `.txt` file and reports useful statistics:  
+- Total lines, words, and characters  
+- Top 5 most frequent words  
 
-## 💡 Features
-- Sorts files into subfolders based on extension (e.g. `.pdf`, `.jpg`)
-- Ignores folders and hidden/system files
-- Uses Python's `os` and `shutil` modules
-- Easy to modify or extend (e.g. add logging or support for specific file types)
+Useful for analyzing notes, articles, logs, and other text-based data.
 
-## 📦 Usage
+## 🚀 Features
+- Counts words, lines, and characters
+- Displays most common words using `collections.Counter`
+- Command-line support via `argparse`
 
+## 📦 Example Usage
+
+```bash
+# Basic
+python3 word_stats.py sample.txt
+
+# Output:
+Lines: 3
+Words: 22
+Characters: 123
+Top 5 Words:
+hello: 4
+this: 1
+is: 1
+a: 1
+sample: 1

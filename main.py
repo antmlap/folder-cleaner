@@ -1,3 +1,4 @@
+# This script organizes files into folders by type
 import os
 import shutil
 
